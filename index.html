@@ -262,7 +262,7 @@
       const row = document.createElement('tr');
       row.innerHTML = `
         <td>${app.name} <span class="wattage_merge">(${app.watt} Watt)</span></td>
-        <td><input class="quantity_num" placeholder="Enter Quantity" type="number" id="${app.id}" oninput="calculateLoad()"></td>
+        <td><input min="0" class="quantity_num" placeholder="Enter Quantity" type="number" id="${app.id}" oninput="calculateLoad()"></td>
         <td><span id="${app.id}_total">0</span></td>`;
       applianceList.appendChild(row);
     });
