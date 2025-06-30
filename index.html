@@ -190,7 +190,7 @@
           </table>
         </div>
         <div class="system-loss">
-          <label>System Loss: <strong>20%</strong></label>
+          <label>System Loss: <strong>15%</strong></label>
         </div>
         <button type="button" onclick="calculateLoad()">Calculate Total Load</button>
       </form>
@@ -283,7 +283,7 @@
         totalW += applianceTotal;
       });
 
-      const systemLossFactor = 2;
+      const systemLossFactor = 1.15;
       const systemSizeKW = (totalW / 1000) * systemLossFactor;
       const totalKW = totalW / 1000;
 
