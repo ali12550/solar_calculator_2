@@ -61,6 +61,7 @@
             border: 1px solid #ccc;
             padding: 5px;
             text-align: center;
+            line-height:1.5;
         }
 
         .appliance-table tr:nth-child(even) {
@@ -277,7 +278,7 @@
         appliances.forEach(app => {
             const row = document.createElement('tr');
             row.innerHTML = `
-        <td style="width: 24%; line-height: 1.5" >${app.name} <span class="wattage_merge">(${app.watt} Watt)</span></td>
+        <td style="width: 24%;" >${app.name} <span class="wattage_merge">(${app.watt} Watt)</span></td>
         <td style="width: 19%;"><input class="quantity_num" placeholder="Enter Quantity" type="number" id="${app.id}" value="" oninput="calculateLoad()""></td>
         <td style="width: 15%;"><span id="${app.id}_total">0</span></td>`;
             applianceList.appendChild(row);
