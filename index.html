@@ -14,7 +14,7 @@
 
         .section_solar {
             background: #f4f4f4;
-            display: flex;
+            display: flex; 
             justify-content: center;
             padding: 30px 15px;
         }
@@ -210,14 +210,15 @@
                 <div class="system-loss">
                     <label>System Loss (fixed): <strong>15%</strong></label>
                 </div>
-                <button type="button" onclick="calculateLoad()">Calculate Total Load</button>
+<!--                 <button type="button" onclick="calculateLoad()">Calculate Total Load</button> -->
             </form>
 
             <div class="result">
                 <h2>Total Load: <span id="totalLoad">0</span> Watts</h2>
+                <button onclick="convertWattsToKW()">Convert Watts to kW</button>
                 <h2>Recommended System Size: <span id="systemSize">0</span> kW</h2>
                 <h2>Recommended Inverter Size: <span id="inverterSizeKW">0</span> kW</h2>
-                <button onclick="convertWattsToKW()">Convert Watts to kW</button>
+                
                 <div id="kwConversion"></div>
             </div>
 
